@@ -1,0 +1,25 @@
+{
+	"pack": {
+		"pack_format": 6,
+		"description": {
+			"text": "Custom Items",
+			"color": "blue",
+			"italic": "true",
+			"bold": "true",
+
+			
+			"extra": [
+				{
+					"text":" By Waffledog1000",
+					"color":"gray",
+                    "italic": "false"
+				},
+				{
+					"text":" [1.16+]",
+					"color":"green",
+                    "italic": "false"
+				}
+			]
+		}
+	}
+}

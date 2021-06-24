@@ -1,0 +1,1 @@
+tellraw @s[tag=user] [{"text":"[Generic] ","color":"dark_green","bold":true,"clickEvent":{"action":"run_command","value":"/function items-101:help/lists/generic"}},{"text":"    [Personal]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function items-101:help/personal_check"}}]
