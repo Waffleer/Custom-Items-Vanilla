@@ -1,0 +1,12 @@
+
+
+Correct
+
+{"predicate": {"custom_model_data":111001}, "model": "item/custom/111001"},
+{"predicate": {"custom_model_data":111002}, "model": "item/custom/111002"}
+
+Not Correct - this will change you item to the wrong icon
+Lower Number should be first
+
+{"predicate": {"custom_model_data":111002}, "model": "item/custom/111002"},
+{"predicate": {"custom_model_data":111001}, "model": "item/custom/111001"}
