@@ -128,7 +128,7 @@ def newentity():
         f = open(f'Custom Items [RES]/assets/minecraft/models/item/{q122}.json', 'a')
         f.write(f"""{{\t"parent": "item/generated",\n""")
         f.write(f"""\t"textures": {{\n""")
-        f.write(f"""\t\t"layer0": "item/elytra"\n""")        
+        f.write(f"""\t\t"layer0": "item/{q122}"\n""")        
         f.write(f"""\t}},\n""")
         f.write(f"""\n""")
         f.write(f"""\t"overrides": [\n""")

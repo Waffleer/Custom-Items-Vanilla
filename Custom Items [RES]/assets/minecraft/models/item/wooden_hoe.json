@@ -1,0 +1,25 @@
+{	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/wooden_hoe"
+	},
+
+	"overrides": [
+{"predicate": {"custom_model_data":111022}, "model": "item/custom/111022"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}
