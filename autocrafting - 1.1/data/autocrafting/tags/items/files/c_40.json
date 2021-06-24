@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:prismarine_brick_stairs",
+        "minecraft:prismarine_slab",
+        "minecraft:prismarine_stairs",
+        "minecraft:prismarine_wall",
+        "minecraft:pumpkin_pie",
+        "minecraft:pumpkin_seeds",
+        "minecraft:purple_banner",
+        "minecraft:purple_bed",
+        "minecraft:purple_carpet",
+        "minecraft:purple_concrete_powder"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:compass",
+        "minecraft:composter",
+        "minecraft:conduit",
+        "minecraft:cookie",
+        "minecraft:crafting_table",
+        "minecraft:creeper_banner_pattern",
+        "minecraft:crimson_button",
+        "minecraft:crimson_door",
+        "minecraft:crimson_fence",
+        "minecraft:crimson_fence_gate"
+    ]
+}

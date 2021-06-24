@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:glowstone",
+        "minecraft:golden_apple",
+        "minecraft:golden_axe",
+        "minecraft:golden_boots",
+        "minecraft:golden_carrot",
+        "minecraft:golden_chestplate",
+        "minecraft:golden_helmet",
+        "minecraft:golden_hoe",
+        "minecraft:golden_leggings",
+        "minecraft:golden_pickaxe"
+    ]
+}

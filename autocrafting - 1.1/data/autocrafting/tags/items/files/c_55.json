@@ -1,0 +1,12 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:yellow_carpet",
+        "minecraft:yellow_concrete_powder",
+        "minecraft:yellow_dye",
+        "minecraft:yellow_stained_glass",
+        "minecraft:yellow_stained_glass_pane",
+        "minecraft:yellow_terracotta",
+        "minecraft:yellow_wool"
+    ]
+}

@@ -1,0 +1,2 @@
+setblock ~ ~-1 ~ minecraft:structure_block[mode=load]{metadata:"",mirror:"NONE",ignoreEntities:1b,powered:0b,seed:0L,author:"waffledog1000",rotation:"NONE",posX:-15,mode:"LOAD",posY:0,sizeX:0,posZ:-5,integrity:1.0f,showair:0b,name:"items-101:churchofgod",sizeY:0,sizeZ:0,showboundingbox:1b}
+setblock ~-1 ~-1 ~ redstone_block

@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:quartz_bricks",
+        "minecraft:quartz_pillar",
+        "minecraft:quartz_slab",
+        "minecraft:quartz_stairs",
+        "minecraft:rabbit_stew",
+        "minecraft:rail",
+        "minecraft:redstone",
+        "minecraft:redstone_block",
+        "minecraft:redstone_lamp",
+        "minecraft:redstone_torch"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:golden_shovel",
+        "minecraft:golden_sword",
+        "minecraft:gold_block",
+        "minecraft:gold_ingot",
+        "minecraft:gold_nugget",
+        "minecraft:granite",
+        "minecraft:granite_slab",
+        "minecraft:granite_stairs",
+        "minecraft:granite_wall",
+        "minecraft:gray_banner"
+    ]
+}

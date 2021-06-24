@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:white_terracotta",
+        "minecraft:white_wool",
+        "minecraft:wooden_axe",
+        "minecraft:wooden_hoe",
+        "minecraft:wooden_pickaxe",
+        "minecraft:wooden_shovel",
+        "minecraft:wooden_sword",
+        "minecraft:writable_book",
+        "minecraft:yellow_banner",
+        "minecraft:yellow_bed"
+    ]
+}

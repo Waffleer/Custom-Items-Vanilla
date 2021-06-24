@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:brown_concrete_powder",
+        "minecraft:brown_dye",
+        "minecraft:brown_stained_glass",
+        "minecraft:brown_stained_glass_pane",
+        "minecraft:brown_terracotta",
+        "minecraft:brown_wool",
+        "minecraft:bucket",
+        "minecraft:cake",
+        "minecraft:campfire",
+        "minecraft:carrot_on_a_stick"
+    ]
+}

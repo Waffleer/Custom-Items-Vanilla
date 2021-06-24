@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:cut_sandstone",
+        "minecraft:cut_sandstone_slab",
+        "minecraft:cyan_banner",
+        "minecraft:cyan_bed",
+        "minecraft:cyan_carpet",
+        "minecraft:cyan_concrete_powder",
+        "minecraft:cyan_dye",
+        "minecraft:cyan_stained_glass",
+        "minecraft:cyan_stained_glass_pane",
+        "minecraft:cyan_terracotta"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_40"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_41"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_42"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_43"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_44"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_45"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_46"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_47"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_48"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "autocrafting:files/c_49"
+    }
+  ]
+}

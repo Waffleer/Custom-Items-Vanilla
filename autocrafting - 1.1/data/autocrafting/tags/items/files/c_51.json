@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:stripped_spruce_wood",
+        "minecraft:stripped_warped_hyphae",
+        "minecraft:sugar",
+        "minecraft:target",
+        "minecraft:tnt",
+        "minecraft:tnt_minecart",
+        "minecraft:torch",
+        "minecraft:trapped_chest",
+        "minecraft:tripwire_hook",
+        "minecraft:turtle_helmet"
+    ]
+}

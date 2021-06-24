@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:lime_dye",
+        "minecraft:lime_stained_glass",
+        "minecraft:lime_stained_glass_pane",
+        "minecraft:lime_terracotta",
+        "minecraft:lime_wool",
+        "minecraft:lodestone",
+        "minecraft:loom",
+        "minecraft:magenta_banner",
+        "minecraft:magenta_bed",
+        "minecraft:magenta_carpet"
+    ]
+}

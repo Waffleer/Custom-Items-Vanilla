@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:melon_seeds",
+        "minecraft:minecart",
+        "minecraft:mojang_banner_pattern",
+        "minecraft:mossy_cobblestone",
+        "minecraft:mossy_cobblestone_slab",
+        "minecraft:mossy_cobblestone_stairs",
+        "minecraft:mossy_cobblestone_wall",
+        "minecraft:mossy_stone_bricks",
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:mossy_stone_brick_stairs"
+    ]
+}

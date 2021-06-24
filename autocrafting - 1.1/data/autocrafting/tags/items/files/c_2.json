@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:barrel",
+        "minecraft:beacon",
+        "minecraft:beehive",
+        "minecraft:beetroot_soup",
+        "minecraft:birch_boat",
+        "minecraft:birch_button",
+        "minecraft:birch_door",
+        "minecraft:birch_fence",
+        "minecraft:birch_fence_gate",
+        "minecraft:birch_planks"
+    ]
+}

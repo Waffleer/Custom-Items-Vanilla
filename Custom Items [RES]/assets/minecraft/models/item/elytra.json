@@ -1,0 +1,25 @@
+{	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/elytra"
+	},
+
+	"overrides": [
+{"predicate": {"custom_model_data":111001}, "model": "item/custom/111001"},
+{"predicate": {"custom_model_data":111002}, "model": "item/custom/111002"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}

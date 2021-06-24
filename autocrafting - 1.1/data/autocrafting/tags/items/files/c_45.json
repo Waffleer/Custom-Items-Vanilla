@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:sandstone_slab",
+        "minecraft:sandstone_stairs",
+        "minecraft:sandstone_wall",
+        "minecraft:scaffolding",
+        "minecraft:sea_lantern",
+        "minecraft:shears",
+        "minecraft:shield",
+        "minecraft:shulker_box",
+        "minecraft:skull_banner_pattern",
+        "minecraft:slime_ball"
+    ]
+}

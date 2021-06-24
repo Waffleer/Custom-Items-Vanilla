@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:firework_rocket",Count:1b,tag:{display:{Name:'{"text":"Autocrafting Table","color":"white","italic":false}'},HideFlags:2,Fireworks:{}, autocrafter:1b, CustomModelData:991199}}}

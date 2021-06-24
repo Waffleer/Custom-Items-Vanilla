@@ -1,0 +1,15 @@
+{
+    "replace": "false",
+    "values": [
+        "minecraft:jungle_slab",
+        "minecraft:jungle_stairs",
+        "minecraft:jungle_trapdoor",
+        "minecraft:jungle_wood",
+        "minecraft:ladder",
+        "minecraft:lantern",
+        "minecraft:lapis_block",
+        "minecraft:lapis_lazuli",
+        "minecraft:lead",
+        "minecraft:leather"
+    ]
+}

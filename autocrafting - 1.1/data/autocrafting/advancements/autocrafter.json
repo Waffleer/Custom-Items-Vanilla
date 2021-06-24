@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "autocrafter": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "autocrafting:autocrafter"
+            }
+        }
+    },
+    "rewards": {
+        "function": "autocrafting:item/craftautocrafter"
+    }
+}
