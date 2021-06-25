@@ -21,8 +21,8 @@ General Information
 
 How To use Pack
 
-    Download Repository, and move the corisponding version folder from final to your desktop or wherever
-        final/1.17
+    Download Repository, and move the corisponding version folder from Final Project to your desktop or wherever
+        Final Project/1.17
     This should give you a folder with the Data Pack, the Reasouce Pack, and the compiler.
     
     Open the Folder (1.17 or 1.16) in VS code or an equivelance of it.
