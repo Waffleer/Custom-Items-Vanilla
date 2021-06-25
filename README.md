@@ -1,8 +1,7 @@
 # Custom-Items-Vanilla
 
-
-
 General Information
+
     A user is a player
         You are able to store some textures under a user so that only that user can access thouse textures
     	generic is able to be accessed by all minecrafters regardless of who makes the textures
@@ -61,21 +60,28 @@ How to make a CSV file for the compiler
 
 	For New Entity (Like elytra or shields)
 		e,{item being changed},{Name of New Item},{name of entity texture file, add .png},{who owns the item},
-		{What Item Number is it},{Custom Model Data},{Name of Icon Texture File, add .png} (remove the new line)
+		{What Item Number is it},{Custom Model Data},{Name of Icon Texture File, add .png}     (remove the new line)
 
 		ex.    _e,elytra,Super Wings,superwings.png,generic,item5,111101,superwingsicon.png_
 
 	For New Item	
-		i,{item being changed},{Name of New Item},{name of Item texture file, add .png},{who owns the item},{What Item Number is it},{Custom Model Data}
+		i,{item being changed},{Name of New Item},{name of Item texture file, add .png},{who owns the item},
+		{What Item Number is it},{Custom Model Data}     (remove new line)
 
 		ex.    _i,wooden_hoe,Super Hoe,superhoe.png,generic,item6,111102_
 
 
-	    That should be enough info on how to use it, make sure to test your textures on your own before using my pack, it would be sad if you put all that effort of adding
-	    it to the pack and it doesnt look good
 
-	    I might change some formating with the text box and I have not texted the different players method extensivly, but it should work
-	    If it doesnt work, its probly your fault not mine
+Closing Remarks
+
+    That should be enough info on how to use it, make sure to test your textures on your own before using my pack,
+    it would be sad if you put all that effort of adding it to the pack and it doesn't look good
+
+    I might change some formating with the text box and I have not texted the different players method extensivly,
+    but it should work
+
+
+    If it doesnt work, its probly your fault not mine
     
     
     
