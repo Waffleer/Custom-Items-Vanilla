@@ -5,12 +5,13 @@
 General Information
     A user is a player
         You are able to store some textures under a user so that only that user can access thouse textures
-    generic is able to be accessed by all minecrafters regardless of who makes the textures
+    	generic is able to be accessed by all minecrafters regardless of who makes the textures
     
     Things that You Need to Know
         Name of the new item that you are making
-        The Name of what you are replacing, (diamond_sword, wooden_hoe), to see what it is called type /give @s minecraft:(name of item)
-            this will show you the minecraft cmd name for the item, generaly using _ instead of spaces
+        The Name of what you are replacing, (diamond_sword, wooden_hoe), 
+	    to see what it is called type /give @s minecraft:(name of item)
+            	this will show you the minecraft cmd name for the item, generaly using _ instead of spaces
         Name of the item texture file (.png)
         Name of Icon Texture file (.png), only for entitys
         Who it belongs to, generic or player(num)
@@ -20,6 +21,7 @@ General Information
 
 
 How To use Pack
+
     Download Repository, and move the corisponding version folder from final to your desktop or wherever
         final/1.17
     This should give you a folder with the Data Pack, the Reasouce Pack, and the compiler.
@@ -52,27 +54,28 @@ How To use Pack
 
 How to make a CSV file for the compiler
 
-For New User
-	u,{Name of Player Exactly},{player(num)}
+	For New User
+		u,{Name of Player Exactly},{player(num)}
 
-	ex.    _u,Waffledog1000,player3_ (remove _, don't add spaces)
+		ex.    _u,Waffledog1000,player3_ (remove _, don't add spaces)
 
-For New Entity (Like elytra or shields)
-	e,{item being changed},{Name of New Item},{name of entity texture file, add .png},{who owns the item},{What Item Number is it},{Custom Model Data},{Name of Icon Texture File, add .png}
-	
-	ex.    _e,elytra,Super Wings,superwings.png,generic,item5,111101,superwingsicon.png_
+	For New Entity (Like elytra or shields)
+		e,{item being changed},{Name of New Item},{name of entity texture file, add .png},{who owns the item},
+		{What Item Number is it},{Custom Model Data},{Name of Icon Texture File, add .png} (remove the new line)
 
-For New Item	
-	i,{item being changed},{Name of New Item},{name of Item texture file, add .png},{who owns the item},{What Item Number is it},{Custom Model Data}
+		ex.    _e,elytra,Super Wings,superwings.png,generic,item5,111101,superwingsicon.png_
 
-	ex.    _i,wooden_hoe,Super Hoe,superhoe.png,generic,item6,111102_
+	For New Item	
+		i,{item being changed},{Name of New Item},{name of Item texture file, add .png},{who owns the item},{What Item Number is it},{Custom Model Data}
+
+		ex.    _i,wooden_hoe,Super Hoe,superhoe.png,generic,item6,111102_
 
 
-    That should be enough info on how to use it, make sure to test your textures on your own before using my pack, it would be sad if you put all that effort of adding
-    it to the pack and it doesnt look good
-    
-    I might change some formating with the text box and I have not texted the different players method extensivly, but it should work
-    If it doesnt work, its probly your fault not mine
+	    That should be enough info on how to use it, make sure to test your textures on your own before using my pack, it would be sad if you put all that effort of adding
+	    it to the pack and it doesnt look good
+
+	    I might change some formating with the text box and I have not texted the different players method extensivly, but it should work
+	    If it doesnt work, its probly your fault not mine
     
     
     
