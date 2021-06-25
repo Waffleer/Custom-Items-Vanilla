@@ -15,7 +15,8 @@ General Information
         Name of Icon Texture file (.png), only for entitys
         Who it belongs to, generic or player(num)
         What number item it is (generic,item4   player1,item6)
-        Custom Model Data, 000000 digit number, must be unique and not used before in this pack, 000001 & ^
+        Custom Model Data, 100000 digit number, must be unique and not used before in this pack, 000001 & ^
+		The first Digit can not be a 0, because json, 100001, not 000001
 
 
 
