@@ -1,3 +1,0 @@
-craft check is looped on a command block under the Church of God, the brick Church
-    if it detects the item in the chest it will summon the item and empty the chest
-
