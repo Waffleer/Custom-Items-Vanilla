@@ -53,6 +53,11 @@ How To use Pack
 
 How to make a CSV file for the compiler
 
+	new text file, rename to texture1.csv
+	
+	The file can be named texture1.csv through texture10.csv
+	File should be one line with one of the following
+
 	For New User
 		u,{Name of Player Exactly},{player(num)}
 
