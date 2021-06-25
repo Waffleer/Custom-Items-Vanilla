@@ -1,6 +1,7 @@
 import os
 
 def newitem():
+    var = 'Item'
     #List of uncraftable Items that have duribility
     uncraftable = ["elytra", "trident", "chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots"]
 
@@ -74,6 +75,7 @@ def newitem():
     print("\nDon't forget to move the png to")
     print('\tCustom Items [RES]/assets/minecraft/textures/custom items')
 def newentity():
+    var = 'Entity'
     #List of uncraftable Items that have duribility
     uncraftable = ["elytra", "trident", "chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots"]
 
@@ -197,46 +199,248 @@ def newuser():
     f.write(f'function items-101:help/lists/{q212} \n')
     f.write('\n')
     f.close()
+def end():
+    print(f'{var} has been added, have a nice day')
+    jkfds = input('Are You Ready For the Next One? (Y)')
 
 
-q1input = input('Do You Want to make a new Entity, Item, or User? (E/I/U)')
-q1 = q1input.lower()
-
-if q1 != 'e':
-    if q1 != 'i':
-    #New User
-        player_name = input('What is the exact name of the player? (waffledog1000, bacondog001)')
-        player_number = input("What is the number of the new player? (player1, player7)")
-
-        print('\n')
-        print(f'\t\t Name of item = {player_name} \n')
-        print(f'\t\t Item Replaced = {player_number} \n')
 
 
-        correctYN = input('Is this correct? (Y/N) ')
-        correct = correctYN.lower()
 
-        if correct == 'y':
-            writecodeYN = input('Do you want to input this into the Datapack (Y/N) ')
-            writecode = writecodeYN.lower()
+var = ''
 
-            if writecode == 'y':
-                q211 = player_name
-                q212 = player_number
+f1input = input('Do you have a CSV to install?(Y/N)')
+f1 = f1input.lower()
 
+if f1 == 'y':
+    csv = []
+    y = 0
+    x = 1
+    while y < 10:
+        newpath = f'texture{x}.csv' 
+        if os.path.exists(newpath):
+            csv.append(f'texture{x}.csv')
+        y += 1
+        x += 1
+    y = 0
+    x = 0
+    print(csv)
+    csvLen = len(csv)
+
+
+    x = 0
+    while y < csvLen:
+        current = csv[x]
+        current_1 = open(f'{current}')
+
+        lines_to_read = [0]
+        for position, line in enumerate(current_1):
+            if position in lines_to_read:
+                current_2 = f'{line}'
+
+        current_3 = current_2.split(',')
+
+        if current_3[0] == 'u':
+
+
+            player_name = current_3[1]
+            player_number = current_3[2]
+
+            q211 = player_name
+            q212 = player_number
+
+            print('\n')
+            print('\t\t New User\n')
+            print(f'\t\t Name of item = {q211} \n')
+            print(f'\t\t Item Replaced = {q212} \n')
+            print('\n')
+            blank = input('Is this Correct? (Y/N)')
+            blank_1 = blank.lower()
+            if blank_1 == 'y':
                 newuser()
+                var = 'User'
+                end()
+                
+            else:
+                print('Restart')
+
+
+
+
+
+
+        else:
+            if current_3[0] == 'e':
+
+
+                item_replaced = current_3[1]
+                item_name = current_3[2]
+                item_texture = current_3[3]
+                item_player = current_3[4]
+                item_num = current_3[5]
+                item_cmd = current_3[6]
+                item_icon_texture = current_3[7]
+
+                
+                q122 = item_replaced
+                q121 = item_name
+                q123 = item_texture
+                q124 = item_player
+                q1241 = item_num
+                q12901 = item_cmd
+                q125 = item_icon_texture
+
+                print('\n')
+                print('\t\t New Entity\n')
+                print(f'\t\t Name of Entity = {item_name} \n')
+                print(f'\t\t Item Replaced = {item_replaced} \n')
+                print(f'\t\t Name of entity texture = {item_texture} \n')
+                print(f'\t\t name of Icon texture = {item_icon_texture} \n')
+                print(f'\t\t Owner of item = {item_player} \n')
+                print(f'\t\t Number of item = {item_num} \n')
+                print(f'\t\t Custom Model data = {item_cmd} \n')
+                print('\n')
+                blank = input('Is this Correct? (Y/N)')
+                blank_1 = blank.lower()
+                if blank_1 == 'y':
+                    newentity()
+                    var = 'Entity'
+                    end()
+                else:
+                    print('Restart')
+
 
 
             else:
-                print('failed')
+                if current_3[0] == 'i':
+
+                    item_replaced = current_3[1]
+                    item_name = current_3[2]
+                    item_texture = current_3[3]
+                    item_player = current_3[4]
+                    item_num = current_3[5]
+                    item_cmd = current_3[6]
+
+                    q122 = item_replaced
+                    q121 = item_name
+                    q123 = item_texture
+                    q124 = item_player
+                    q1241 = item_num
+                    q12901 = item_cmd
+
+                    print('\n')
+                    print('\t\t New Item\n')
+                    print(f'\t\t Name of item = {item_name} \n')
+                    print(f'\t\t Item Replaced = {item_replaced} \n')
+                    print(f'\t\t Name of texture = {item_texture} \n')
+                    print(f'\t\t Owner of item = {item_player} \n')
+                    print(f'\t\t Number of item = {item_num} \n')
+                    print(f'\t\t Custom Model data = {item_cmd} \n')
+                    print('\n')
+                    blank = input('Is this Correct? (Y/N)')
+                    blank_1 = blank.lower()
+                    if blank_1 == 'y':
+                        newitem()
+                        var = 'Item'
+                        end()
+                    else:
+                        print('Restart')
+
+                else:
+                    print('Error, no led letter was found (e,i,u)')
+
+
+
+
+
+        y += 1
+        x += 1
+    y = 0
+    x = 0
+
+else:
+    q1input = input('Do You Want to make a new Entity, Item, or User? (E/I/U)')
+    q1 = q1input.lower()
+
+    if q1 != 'e':
+        if q1 != 'i':
+        #New User
+            player_name = input('What is the exact name of the player? (waffledog1000, bacondog001)')
+            player_number = input("What is the number of the new player? (player1, player7)")
+
+            print('\n')
+            print(f'\t\t Name of item = {player_name} \n')
+            print(f'\t\t Item Replaced = {player_number} \n')
+
+
+            correctYN = input('Is this correct? (Y/N) ')
+            correct = correctYN.lower()
+
+            if correct == 'y':
+                writecodeYN = input('Do you want to input this into the Datapack (Y/N) ')
+                writecode = writecodeYN.lower()
+
+                if writecode == 'y':
+                    q211 = player_name
+                    q212 = player_number
+
+                    newuser()
+                    var = 'User'
+                    end()
+
+                else:
+                    print('failed')
+            else:
+                print('no')
+
         else:
-            print('no')
+        #New Item
+            item_replaced = input('What item is being replaced? (iron_sword, elytra, iron_boots)')
+            item_name = input("""What is the name is the item? (Ravens Wing, Super Sword - Dont use ' )""")
+            item_texture = input("""What is the name of the texture? (ravens wing.png, dawn wings.png - Dont use ' )""")
+            item_player = input("Who owns the item? (player3, player9, generic)")
+            item_num = input("What item number is it? (item1, item22)")
+            item_cmd = input("What Custom Model Data number is it (111001, 111921 - pick a number between 1-999 and add 111000)")
+
+            print('\n')
+            print(f'\t\t Name of item = {item_name} \n')
+            print(f'\t\t Item Replaced = {item_replaced} \n')
+            print(f'\t\t Name of texture = {item_texture} \n')
+            print(f'\t\t Owner of item = {item_player} \n')
+            print(f'\t\t Number of item = {item_num} \n')
+            print(f'\t\t Custom Model data = {item_cmd} \n')
+
+            correctYN = input('Is this correct? (Y/N)')
+            correct = correctYN.lower()
+
+            if correct == 'y':
+                writecodeYN = input('Do you want to input this into the Datapack & Reasource Pack (Y/N)')
+                writecode = writecodeYN.lower()
+
+                if writecode == 'y':
+                    q122 = item_replaced
+                    q121 = item_name
+                    q123 = item_texture
+                    q124 = item_player
+                    q1241 = item_num
+                    q12901 = item_cmd
+
+                    newitem()
+                    var = 'Item'
+                    end()
+
+
+                else:
+                    print('Restart form')
+            else:
+                print('Restart form')
 
     else:
-    #New Item
+    #new entity
         item_replaced = input('What item is being replaced? (iron_sword, elytra, iron_boots)')
         item_name = input("""What is the name is the item? (Ravens Wing, Super Sword - Dont use ' )""")
-        item_texture = input("""What is the name of the texture? (ravens wing.png, dawn wings.png - Dont use ' )""")
+        item_texture = input("""What is the name of the entity texture? (ravens wing.png, dawn wings.png - Dont use ' )""")
+        item_icon_texture = input("""What is the name of the item texture? (ravens wing icon.png, dawn wings icon.png - Dont use ' )""")
         item_player = input("Who owns the item? (player3, player9, generic)")
         item_num = input("What item number is it? (item1, item22)")
         item_cmd = input("What Custom Model Data number is it (111001, 111921 - pick a number between 1-999 and add 111000)")
@@ -245,6 +449,7 @@ if q1 != 'e':
         print(f'\t\t Name of item = {item_name} \n')
         print(f'\t\t Item Replaced = {item_replaced} \n')
         print(f'\t\t Name of texture = {item_texture} \n')
+        print(f'\t\t name of Item texture = {item_icon_texture} \n')
         print(f'\t\t Owner of item = {item_player} \n')
         print(f'\t\t Number of item = {item_num} \n')
         print(f'\t\t Custom Model data = {item_cmd} \n')
@@ -263,57 +468,16 @@ if q1 != 'e':
                 q124 = item_player
                 q1241 = item_num
                 q12901 = item_cmd
+                q125 = item_icon_texture
 
-                newitem()
-
+                newentity()
+                var = 'Entity'
+                end()
 
             else:
                 print('Restart form')
         else:
             print('Restart form')
-
-else:
-#new entity
-    item_replaced = input('What item is being replaced? (iron_sword, elytra, iron_boots)')
-    item_name = input("""What is the name is the item? (Ravens Wing, Super Sword - Dont use ' )""")
-    item_texture = input("""What is the name of the entity texture? (ravens wing.png, dawn wings.png - Dont use ' )""")
-    item_item_texture = input("""What is the name of the item texture? (ravens wing icon.png, dawn wings icon.png - Dont use ' )""")
-    item_player = input("Who owns the item? (player3, player9, generic)")
-    item_num = input("What item number is it? (item1, item22)")
-    item_cmd = input("What Custom Model Data number is it (111001, 111921 - pick a number between 1-999 and add 111000)")
-
-    print('\n')
-    print(f'\t\t Name of item = {item_name} \n')
-    print(f'\t\t Item Replaced = {item_replaced} \n')
-    print(f'\t\t Name of texture = {item_texture} \n')
-    print(f'\t\t name of Item texture = {item_item_texture} \n')
-    print(f'\t\t Owner of item = {item_player} \n')
-    print(f'\t\t Number of item = {item_num} \n')
-    print(f'\t\t Custom Model data = {item_cmd} \n')
-
-    correctYN = input('Is this correct? (Y/N)')
-    correct = correctYN.lower()
-
-    if correct == 'y':
-        writecodeYN = input('Do you want to input this into the Datapack & Reasource Pack (Y/N)')
-        writecode = writecodeYN.lower()
-
-        if writecode == 'y':
-            q122 = item_replaced
-            q121 = item_name
-            q123 = item_texture
-            q124 = item_player
-            q1241 = item_num
-            q12901 = item_cmd
-            q125 = item_item_texture
-
-            newentity()
-
-
-        else:
-            print('Restart form')
-    else:
-        print('Restart form')
 
 
 

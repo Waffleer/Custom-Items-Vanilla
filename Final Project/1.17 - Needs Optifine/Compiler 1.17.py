@@ -160,7 +160,7 @@ def newentity():
 def newuser():
     import os
     #New Player
-    var = 'User'
+
     f = open('Custom Item Data Pack/data/items-101/functions/loop.mcfunction', 'a')
     f.write('\n')
     f.write(f'tag @a[name="{q211}"] add {q212} \n')
@@ -201,12 +201,23 @@ def newuser():
     f.close()
 def end():
     print(f'{var} has been added, have a nice day')
-def csv():
+    jkfds = input('Are You Ready For the Next One? (Y)')
+
+
+
+
+
+var = ''
+
+f1input = input('Do you have a CSV to install?(Y/N)')
+f1 = f1input.lower()
+
+if f1 == 'y':
     csv = []
     y = 0
     x = 1
     while y < 10:
-        newpath = f'1.17/texture{x}.csv' 
+        newpath = f'texture{x}.csv' 
         if os.path.exists(newpath):
             csv.append(f'texture{x}.csv')
         y += 1
@@ -215,29 +226,20 @@ def csv():
     x = 0
     print(csv)
     csvLen = len(csv)
- 
+
 
     x = 0
     while y < csvLen:
         current = csv[x]
-        current_1 = open(f'1.17/{current}')
-
-
+        current_1 = open(f'{current}')
 
         lines_to_read = [0]
         for position, line in enumerate(current_1):
             if position in lines_to_read:
                 current_2 = f'{line}'
 
-
-
-
-
-
-
-
         current_3 = current_2.split(',')
-    
+
         if current_3[0] == 'u':
 
 
@@ -248,15 +250,17 @@ def csv():
             q212 = player_number
 
             print('\n')
-            print('New User')
-            print(f'\t\t Name of item = {player_name} \n')
-            print(f'\t\t Item Replaced = {player_number} \n')
+            print('\t\t New User\n')
+            print(f'\t\t Name of item = {q211} \n')
+            print(f'\t\t Item Replaced = {q212} \n')
             print('\n')
             blank = input('Is this Correct? (Y/N)')
             blank_1 = blank.lower()
             if blank_1 == 'y':
                 newuser()
+                var = 'User'
                 end()
+                
             else:
                 print('Restart')
 
@@ -287,7 +291,7 @@ def csv():
                 q125 = item_icon_texture
 
                 print('\n')
-                print('New Entity')
+                print('\t\t New Entity\n')
                 print(f'\t\t Name of Entity = {item_name} \n')
                 print(f'\t\t Item Replaced = {item_replaced} \n')
                 print(f'\t\t Name of entity texture = {item_texture} \n')
@@ -300,6 +304,7 @@ def csv():
                 blank_1 = blank.lower()
                 if blank_1 == 'y':
                     newentity()
+                    var = 'Entity'
                     end()
                 else:
                     print('Restart')
@@ -324,7 +329,7 @@ def csv():
                     q12901 = item_cmd
 
                     print('\n')
-                    print('New Item')
+                    print('\t\t New Item\n')
                     print(f'\t\t Name of item = {item_name} \n')
                     print(f'\t\t Item Replaced = {item_replaced} \n')
                     print(f'\t\t Name of texture = {item_texture} \n')
@@ -336,6 +341,7 @@ def csv():
                     blank_1 = blank.lower()
                     if blank_1 == 'y':
                         newitem()
+                        var = 'Item'
                         end()
                     else:
                         print('Restart')
@@ -351,18 +357,6 @@ def csv():
         x += 1
     y = 0
     x = 0
-
-
-
-
-
-var = ''
-
-f1input = input('Do you have a CSV to install?(Y/N)')
-f1 = f1input.lower()
-
-if f1 == 'y':
-    csv()
 
 else:
     q1input = input('Do You Want to make a new Entity, Item, or User? (E/I/U)')
@@ -391,6 +385,7 @@ else:
                     q212 = player_number
 
                     newuser()
+                    var = 'User'
                     end()
 
                 else:
@@ -431,6 +426,7 @@ else:
                     q12901 = item_cmd
 
                     newitem()
+                    var = 'Item'
                     end()
 
 
@@ -475,6 +471,7 @@ else:
                 q125 = item_icon_texture
 
                 newentity()
+                var = 'Entity'
                 end()
 
             else:
