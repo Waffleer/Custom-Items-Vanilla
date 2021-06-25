@@ -32,7 +32,7 @@ How To use Pack
         If you have an error invovling not finding the right files, then you opened the wrong folder or something
         
     After the Compiler has run with out any errors, the data pack and the reasource pack should be updated with the new code
-        Dont forget to move the Png into the right folder, its quite important
+        Don't forget to move the Png into the right folder, its quite important
        
        Once the Compiler Has finished, Move the Data pack into the minecraft world, you may have to type /reload to reset the pack
        Move the Reasouce Pack to your Reasource Pack folder
